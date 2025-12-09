@@ -8,17 +8,17 @@ The project follows a modular High-Level Design where a central API layer manage
 
 ```mermaid
 graph TD
-    Client[Client Application]
+    Client["Client Application"]
     
     subgraph "ML Inference Service"
-        API[API Gateway (FastAPI)]
-        Registry[Model Registry]
+        API["API Gateway (FastAPI)"]
+        Registry["Model Registry"]
         
         subgraph "Inference Engines"
-            LR[Linear Regression]
-            KNN[K-Nearest Neighbors]
-            RF[Random Forest]
-            More[...]
+            LR["Linear Regression"]
+            KNN["K-Nearest Neighbors"]
+            RF["Random Forest"]
+            More["..."]
         end
     end
 
